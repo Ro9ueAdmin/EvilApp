@@ -247,10 +247,10 @@ default_start_build="Y"
 read -p $'\e[1;77m[\e[0m\e[1;92m+\e[0m\e[1;77m] Start build? [Y/n]: ' start_build
 start_build="${start_build:-${default_start_build}}"
 if [[ $start_build == "Y" || $start_build == "Yes" || $start_build == "yes" || $start_build == "y" ]]; then
-cd app/
-gradle build
 source "$HOME/.sdkman/bin/sdkman-init.sh"
 sdk use gradle 2.14.1
+cd app/
+gradle build
 cd ../
 checkapk
 else
