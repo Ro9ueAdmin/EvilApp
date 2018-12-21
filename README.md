@@ -1,11 +1,11 @@
-# EvilApp
-# DroidFiles v1.0
-## Author: https://github.com/thelinuxchoice/droidfiles
+# EvilApp v1.0
+## Author: https://github.com/thelinuxchoice/EvilApp
 ## IG: https://www.instagram.com/linux_choice
 ### Don't copy this code without give me the credits, nerd! 
 
 Script to generate Android App that can hijack autenticated sessions in cookies
 
+![ea](https://user-images.githubusercontent.com/34893261/50353882-c6007a80-0530-11e9-81b0-9242e5c33ba7.png)
 
 ### Features:
 #### 2 Port Forwarding options (Ngrok or using SSH Tunneling with Serveo.net)
