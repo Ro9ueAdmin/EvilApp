@@ -269,7 +269,7 @@ website() {
 
 default_url="https://www.instagram.com"
 printf '\e[1;77m[\e[0m\e[1;92m+\e[0m\e[1;77m] Choose a Website (Default:\e[0m\e[1;92m %s \e[0m\e[1;77m): \e[0m' $default_url
-read port
+read url
 url="${url:-${default_url}}"
 
 
